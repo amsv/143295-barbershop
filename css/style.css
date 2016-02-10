@@ -1,4 +1,4 @@
-body {
+/* body {
 	font-size: 14px;
 	line-height: 24px;
 	color: #000000;
@@ -21,3 +21,54 @@ h2 {
 	font-weight: bold;
 	font-family: "PTSans NarrowBold", Arial, sans-serif;
 }
+
+.clearfix::after {
+	content: "";
+	display: table;
+	clear: both;
+} */
+html,
+body {
+  min-width: 1195px;
+  min-height: 1170px;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: #000000 url("../img/barbershop-shop-grid.jpg") no-repeat 50% 0px;
+  background-size: 1195px auto;
+}
+
+.main-header {
+  /* Только для оформления сетки */
+  min-height: 70px;
+	outline: 1px solid rgb(0, 128, 0);
+	background: rgba(0, 128, 0,0.5);
+}
+
+.container {
+  width: 940px;
+	margin: 0 auto;
+  padding: 0 10px;
+  
+  /* Только для оформления сетки */
+  min-height: 70px;
+	outline: 1px solid rgb(255, 45, 82);
+	background: rgba(255, 45, 82,0.2);
+}
+
+.main-navigation {
+  /* Только для оформления сетки */
+  min-height: 70px;
+	outline: 1px solid rgb(234, 255, 45);
+	background: rgba(234, 255, 45, 0.2);
+}
+
+.user-block {
+  /* Только для оформления сетки */
+  min-height: 70px;
+	outline: 1px solid rgb(234, 255, 45);
+	background: rgba(234, 255, 45, 0.2);
+}
+
