@@ -30,28 +30,22 @@ h2 {
 	clear: both;
 }
 
-/* Только для оформления сетки  */
-/* html,
+/* Только для оформления сетки  
+html,
 body {
   min-width: 1200px;
-  min-height: 1173px;
+  min-height: 1162px;
   margin: 0;
   padding: 0;
-} */
-
-/* body {
-  background: #000000 url("../img/barbershop-shop-grid.jpg") no-repeat 50% -2px;
+} 
+body {
+  background: #000000 url("../img/barbershop-shop-grid.jpg") no-repeat 50% 0px; 
+	background: #000000 url("../img/barbershop-catalog-item-grid.jpg") no-repeat 50% 0px; 
   background-size: 1200px auto;
-} */
-
-.clearfix::after {
-	content: "";
-	display: table;
-	clear: both;
-}
+}*/  
 
 .main-header {
-	margin-bottom
+	
   /* Только для оформления сетки 
   min-height: 70px;
 	outline: 1px solid rgb(0, 128, 0);
@@ -72,6 +66,7 @@ body {
 .main-navigation {
 	float: left;
 	width: 780px;
+	min-height: 70px;
 	
   /* Только для оформления сетки 
   min-height: 70px;
@@ -82,6 +77,7 @@ body {
 .user-block {
 	float: right;
 	width: 140px;
+	min-height: 70px;
 	
   /* Только для оформления сетки 
   min-height: 70px;
@@ -109,9 +105,7 @@ body {
 }
 
 .content {
-	
-	
-	  /* Только для оформления сетки 
+	/* Только для оформления сетки 
   min-height: 700px;
 	outline: 1px solid rgb(255, 45, 82);
 	background: rgba(255, 45, 82,0.5);*/
@@ -137,9 +131,29 @@ body {
 	background: rgba(234, 255, 45, 0.2);*/	
 }
 
+.gallery-content-left {
+	float: left;
+	width: 460px;
+	margin-right: 90px;
+  /* Только для оформления сетки 
+  min-height: 700px;
+	outline: 1px solid rgb(234, 255, 45);
+	background: rgba(234, 255, 45, 0.2);*/	
+}
+
+.gallery-content-right {
+	float: left;
+	width: 390px;
+
+  /* Только для оформления сетки 
+  min-height: 700px;
+	outline: 1px solid rgb(234, 255, 45);
+	background: rgba(234, 255, 45, 0.2);*/	
+}
+
 .main-footer {
 	padding-top: 60px;
-	padding-bottom: 40px;	
+	padding-bottom: 45px;	
 	
 	  /* Только для оформления сетки 
   min-height: 190px;
@@ -151,7 +165,6 @@ body {
 	float: left;
 	width: 320px;
 	margin-right: 60px;
-
 	
   /* Только для оформления сетки 
   min-height: 90px;
@@ -178,4 +191,66 @@ body {
 	outline: 1px solid rgb(234, 255, 45);
 	background: rgba(234, 255, 45, 0.2);*/
 }
+
+.index-main-header {
+  margin-bottom: 60px;
+}
+
+.index-logo {
+  width: 368px;
+  min-height: 204px;
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 25px;
+}
+
+.features {
+  margin-bottom: 80px;
+}
+
+.features-item {
+  float: left;
+  width: 300px;
+  min-height: 175px;
+  margin-right: 20px;
+}
+
+.features-item:last-child {
+  margin-right: 0;
+}
+
+.index-content {
+  margin-bottom: 35px;
+  padding: 50px 80px;
+}
+
+.index-content-left {
+  float: left;
+  width: 380px;
+  min-height: 330px;
+}
+
+.index-content-right {
+  float: right;
+  width: 300px;
+  min-height: 330px;
+}
+
+.index-main-footer {
+  margin-top: 65px;
+  padding-top: 60px;
+  padding-bottom: 40px;
+}
+
+.product-card {
+	  float: left;
+    width: 220px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+}
+
+.product-card:nth-child(3n) {
+    margin-right: 0;
+}
+
 
