@@ -11,6 +11,97 @@ body {
 	min-width: 960px;
 }
 
+.sprite {
+    background-image: url(spritesheet.png);
+    background-repeat: no-repeat;
+    display: block;
+}
+
+.sprite-f-b {
+    width: 12px;
+    height: 22px;
+    background-position: -10px -10px;
+}
+
+.sprite-ico-circle {
+    width: 20px;
+    height: 20px;
+    background-position: -10px -52px;
+}
+
+.sprite-ico-cross {
+    width: 12px;
+    height: 12px;
+    background-position: -10px -92px;
+}
+
+.sprite-ico-cross-w {
+    width: 23px;
+    height: 23px;
+    background-position: -10px -124px;
+}
+
+.sprite-ico-f-w {
+    width: 12px;
+    height: 22px;
+    background-position: -10px -167px;
+}
+
+.sprite-ico-i-b {
+    width: 21px;
+    height: 21px;
+    background-position: -10px -209px;
+}
+
+.sprite-ico-i-w {
+    width: 21px;
+    height: 21px;
+    background-position: -10px -250px;
+}
+
+.sprite-ico-index-locked {
+    width: 15px;
+    height: 17px;
+    background-position: -10px -291px;
+}
+
+.sprite-ico-index-user {
+    width: 15px;
+    height: 15px;
+    background-position: -10px -328px;
+}
+
+.sprite-ico-point {
+    width: 8px;
+    height: 8px;
+    background-position: -10px -363px;
+}
+
+.sprite-ico-square {
+    width: 20px;
+    height: 20px;
+    background-position: -10px -391px;
+}
+
+.sprite-ico-v-b {
+    width: 25px;
+    height: 16px;
+    background-position: -10px -431px;
+}
+
+.sprite-ico-v-w {
+    width: 25px;
+    height: 16px;
+    background-position: -10px -467px;
+}
+
+.sprite-icon-login {
+    width: 18px;
+    height: 16px;
+    background-position: -10px -503px;
+}
+
+
 h1 {
 	font-size: 30px;
 	line-height: 36px;
@@ -29,7 +120,7 @@ h2 {
 	clear: both;
 }
 
-/* Только для оформления сетки */  
+/* РўРѕР»СЊРєРѕ РґР»СЏ РѕС„РѕСЂРјР»РµРЅРёСЏ СЃРµС‚РєРё */  
 /* html,
 body {
   min-width: 1200px;
@@ -50,7 +141,7 @@ body {
   background-color: #000000;
   margin-bottom: 60px;
 
-  /* Только для оформления сетки 
+  /* РўРѕР»СЊРєРѕ РґР»СЏ РѕС„РѕСЂРјР»РµРЅРёСЏ СЃРµС‚РєРё 
   min-height: 70px;*/
 	outline: 1px solid rgb(0, 128, 0);
 	background: rgba(0, 128, 0,0.5);
@@ -61,7 +152,7 @@ body {
 	margin: 0 auto;
   padding: 0 10px;
   
-  /* Только для оформления сетки 
+  /* РўРѕР»СЊРєРѕ РґР»СЏ РѕС„РѕСЂРјР»РµРЅРёСЏ СЃРµС‚РєРё 
   min-height: 70px;*/
 	outline: 1px solid rgb(255, 45, 82);
 	background: rgba(255, 45, 82,0.5);
@@ -73,18 +164,22 @@ body {
 	width: 780px;
 	min-height: 70px;
 
-  /* Только для оформления сетки 
+  /* РўРѕР»СЊРєРѕ РґР»СЏ РѕС„РѕСЂРјР»РµРЅРёСЏ СЃРµС‚РєРё 
   min-height: 70px;*/
 	outline: 1px solid rgb(234, 255, 45);
 	background: rgba(234, 255, 45, 0.2);
 }
 
-.main-navigation > a {
+.main-navigation-logo {
 	position: absolute;
+	
+	height: 24px;
+  margin: 0 auto;
 }
 
-.main-navigation > a + ul {
-	margin-left: 150px;
+.main-navigation-logo  img{
+	width: 111px;
+	height: 24px;
 }
 
 .main-navigation ul {
@@ -93,6 +188,11 @@ body {
 	
   list-style: none;
 	font-size: 0;
+}
+
+.main-navigation-logo+ul {
+  margin-left: 150px;
+	
 }
 
 .main-navigation li {
@@ -114,6 +214,13 @@ body {
 	
 }
 
+.main-navigation-logo a {
+  padding-bottom: 0px;
+	
+}
+
+
+
 .main-navigation ul a:hover {
   background: #242424;
 }
@@ -122,7 +229,7 @@ body {
 	float: right;
 	max-width: 140px;
 	
-  /* Только для оформления сетки 
+  /* РўРѕР»СЊРєРѕ РґР»СЏ РѕС„РѕСЂРјР»РµРЅРёСЏ СЃРµС‚РєРё 
   min-height: 70px;*/
 	outline: 1px solid rgb(234, 255, 45);
 	background: rgba(234, 255, 45, 0.2);
@@ -169,7 +276,7 @@ body {
 	/* padding-top: 55px; */
 	padding-bottom: 50px;
 	
-	/* Только для оформления сетки 
+	/* РўРѕР»СЊРєРѕ РґР»СЏ РѕС„РѕСЂРјР»РµРЅРёСЏ СЃРµС‚РєРё 
   min-height: 855px;*/
 	outline: 1px solid rgb(0, 128, 0);
 	background: rgba(0, 128, 0,0.2);
@@ -178,14 +285,14 @@ body {
 .second-header {
 	margin-bottom: 40px;
 	
-  /* Только для оформления сетки 
+  /* РўРѕР»СЊРєРѕ РґР»СЏ РѕС„РѕСЂРјР»РµРЅРёСЏ СЃРµС‚РєРё 
   min-height: 70px;*/
 	outline: 1px solid rgb(0, 0, 255);
 	background: rgba(0, 0, 255,0.5);	
 }
 
 .content {
-	/* Только для оформления сетки 
+	/* РўРѕР»СЊРєРѕ РґР»СЏ РѕС„РѕСЂРјР»РµРЅРёСЏ СЃРµС‚РєРё 
   min-height: 700px;*/
 	outline: 1px solid rgb(255, 45, 82);
 	background: rgba(255, 45, 82,0.5);
@@ -195,7 +302,7 @@ body {
 	float: left;
 	width: 220px;
 	
-  /* Только для оформления сетки 
+  /* РўРѕР»СЊРєРѕ РґР»СЏ РѕС„РѕСЂРјР»РµРЅРёСЏ СЃРµС‚РєРё 
   min-height: 700px;*/
 	outline: 1px solid rgb(234, 255, 45);
 	background: rgba(234, 255, 45, 0.2);	
@@ -209,7 +316,7 @@ body {
 	float: right;
 	width: 700px;
 	
-  /* Только для оформления сетки 
+  /* РўРѕР»СЊРєРѕ РґР»СЏ РѕС„РѕСЂРјР»РµРЅРёСЏ СЃРµС‚РєРё 
   min-height: 700px;*/
 	outline: 1px solid rgb(234, 255, 45);
 	background: rgba(234, 255, 45, 0.2);	
@@ -219,7 +326,7 @@ body {
 	float: left;
 	width: 460px;
 	margin-right: 90px;
-  /* Только для оформления сетки 
+  /* РўРѕР»СЊРєРѕ РґР»СЏ РѕС„РѕСЂРјР»РµРЅРёСЏ СЃРµС‚РєРё 
   min-height: 700px;*/
 	outline: 1px solid rgb(234, 255, 45);
 	background: rgba(234, 255, 45, 0.2);	
@@ -229,7 +336,7 @@ body {
 	float: left;
 	width: 390px;
 
-  /* Только для оформления сетки 
+  /* РўРѕР»СЊРєРѕ РґР»СЏ РѕС„РѕСЂРјР»РµРЅРёСЏ СЃРµС‚РєРё 
   min-height: 700px;*/
 	outline: 1px solid rgb(234, 255, 45);
 	background: rgba(234, 255, 45, 0.2);	
@@ -387,7 +494,7 @@ body {
   background-color: #663d15;
 }
 
-/* стили для кнопки, в случае если она неактивна */
+/* СЃС‚РёР»Рё РґР»СЏ РєРЅРѕРїРєРё, РІ СЃР»СѓС‡Р°Рµ РµСЃР»Рё РѕРЅР° РЅРµР°РєС‚РёРІРЅР° */
 
 .btn.disabled,
 .btn:disabled {
@@ -400,7 +507,7 @@ body {
   background-color: #000000;
 }
 
-/*end стили для кнопки, в случае если она неактивна */
+/*end СЃС‚РёР»Рё РґР»СЏ РєРЅРѕРїРєРё, РІ СЃР»СѓС‡Р°Рµ РµСЃР»Рё РѕРЅР° РЅРµР°РєС‚РёРІРЅР° */
 
 .gallery {
   position: relative;
@@ -473,7 +580,7 @@ body {
   padding-top: 60px;
   padding-bottom: 40px;
 	
-	color: #ffffff; /* лучше явно прописать везде для футера */
+	color: #ffffff; /* Р»СѓС‡С€Рµ СЏРІРЅРѕ РїСЂРѕРїРёСЃР°С‚СЊ РІРµР·РґРµ РґР»СЏ С„СѓС‚РµСЂР° */
 
   background: #252525 url("img/pattern-black.jpg");
 
@@ -485,7 +592,7 @@ body {
     margin-right: 20px;
     margin-bottom: 20px;
 		
-		/* только для сетки */
+		/* С‚РѕР»СЊРєРѕ РґР»СЏ СЃРµС‚РєРё */
 	min-height: 286px;
 }
 
@@ -501,10 +608,10 @@ body {
 	padding-top: 60px;
 	padding-bottom: 45px;	
 	
-	color: #ffffff; /* лучше явно прописать везде для футера */
+	color: #ffffff; /* Р»СѓС‡С€Рµ СЏРІРЅРѕ РїСЂРѕРїРёСЃР°С‚СЊ РІРµР·РґРµ РґР»СЏ С„СѓС‚РµСЂР° */
 
   background: #252525 url("img/pattern-black.jpg");
-	  /* Только для оформления сетки 
+	  /* РўРѕР»СЊРєРѕ РґР»СЏ РѕС„РѕСЂРјР»РµРЅРёСЏ СЃРµС‚РєРё 
   min-height: 190px;*/
 	outline: 1px solid rgb(0, 128, 0);
 	background: rgba(0, 128, 0,0.2);
@@ -515,7 +622,7 @@ body {
 	width: 320px;
 	margin-right: 60px;
 	
-  /* Только для оформления сетки 
+  /* РўРѕР»СЊРєРѕ РґР»СЏ РѕС„РѕСЂРјР»РµРЅРёСЏ СЃРµС‚РєРё 
   min-height: 90px;*/
 	outline: 1px solid rgb(234, 255, 45);
 	background: rgba(234, 255, 45, 0.2);
@@ -535,7 +642,7 @@ body {
 	width: 180px;
 	
 	text-align: center;
-  /* Только для оформления сетки 
+  /* РўРѕР»СЊРєРѕ РґР»СЏ РѕС„РѕСЂРјР»РµРЅРёСЏ СЃРµС‚РєРё 
   min-height: 90px;*/
 	outline: 1px solid rgb(234, 255, 45);
 	background: rgba(234, 255, 45, 0.2);
@@ -548,6 +655,8 @@ body {
 }
 
 .social-btn {
+  position: relative;
+  
   display: inline-block;
   width: 43px;
   height: 43px;
@@ -557,7 +666,7 @@ body {
   vertical-align: top;
   text-decoration: none;
 
-  background: #000000 url("../img/sprite.png") no-repeat center;
+  background-color: #000000;
 	
 	transition: 
     background-position 0.5s,
@@ -568,35 +677,51 @@ body {
   background-color: #ffffff;
 }
 
-.social-btn-vk {
-  background-position: -1px -830px;
+.social-btn::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); 
+  background-image: url("../img/sprites.png");
+  background-repeat: no-repeat;  
+} 
+
+.social-btn-vk::before {
+  width: 25px;
+  height: 16px;
+  background-position: -10px -467px;
 }
 
-.social-btn-fb {
-  background-position: 15px -540px;
+.social-btn-fb::before  {
+  width: 12px;
+  height: 22px;
+  background-position: -10px -167px;
 }
 
-.social-btn-inst {
-  background-position: 12px -690px;
+.social-btn-inst::before  {
+	width: 21px;
+	height: 21px;
+	background-position: -10px -250px;
 }
 
-.social-btn-vk:hover {
-  background-position: 9px -770px;
+.social-btn-vk:hover::before {
+  background-position: -10px -431px;
 }
 
-.social-btn-fb:hover {
-  background-position: 15px -480px;
+.social-btn-fb:hover::before  {
+  background-position: -10px -10px;
 }
 
-.social-btn-inst:hover {
-  background-position: 12px -610px;
+.social-btn-inst:hover::before  {
+    background-position: -10px -209px;
 }
 
 .footer-copyright {
 	float: right;
 	max-width: 180px;
 
-  /* Только для оформления сетки 
+  /* РўРѕР»СЊРєРѕ РґР»СЏ РѕС„РѕСЂРјР»РµРЅРёСЏ СЃРµС‚РєРё 
   min-height: 90px;*/
 	outline: 1px solid rgb(234, 255, 45);
 	background: rgba(234, 255, 45, 0.2);
