@@ -377,9 +377,10 @@ input[type="search"]::-webkit-search-decoration {
  */
 
 fieldset {
-  border: 1px solid #c0c0c0;
-  margin: 0 2px;
-  padding: 0.35em 0.625em 0.75em;
+  border-style: none;
+  margin: 0;
+	margin-bottom: 34px;
+  padding: 0;
 }
 
 /**
@@ -390,6 +391,11 @@ fieldset {
 legend {
   border: 0; /* 1 */
   padding: 0; /* 2 */
+	margin-bottom: 30px;
+	
+	font-size: 24px;
+	line-height: 29px;
+	font-weight: bold;
 }
 
 /**

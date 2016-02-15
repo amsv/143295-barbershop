@@ -183,8 +183,8 @@ h3 {
   margin: 0;
   padding: 0;
 	
-  list-style: none;
-	font-size: 0;
+    list-style: none;
+    font-size: 0;
 }
 
 .main-navigation-logo+ul {
@@ -195,7 +195,7 @@ h3 {
 .main-navigation li {
   display: inline-block;
 
-	font-size: 16px;
+    font-size: 16px;
   line-height: 20px;
   vertical-align: top;
 }
@@ -284,13 +284,15 @@ h3 {
 .second-header {
 	margin-bottom: 40px;
 	
-  /* Только для оформления сетки 
-  min-height: 70px;*/
+/*
+   Только для оформления сетки 
+  min-height: 70px;
 	outline: 1px solid rgb(0, 0, 255);
 	background: rgba(0, 0, 255,0.5);	
+*/
 }
 
-.second-header ul {
+.breadcrumbs {
   margin: 0;
   padding: 0;
 	
@@ -298,15 +300,28 @@ h3 {
 	font-size: 0;
 }
 
-.second-header li {
-  display: inline-block;
+.breadcrumbs a, .breadcrumbs span {
+	position: relative;
+  display: inline;	
+  padding-right: 40px;      
 
+	height: 14px;	
 	font-size: 14px;
-  line-height: 24px;
-  vertical-align: top;
+	line-height: 14px; /*несмог сделать 24px строка опускаеться вниз*/		
+	vertical-align: top;	
 }
 
+.breadcrumbs a::after {
+    position: absolute;
+    top: 6px;
+    right: 15px;
+    width: 8px;
+    height: 8px;
+    background: #000000;
 
+    transform: rotate(45deg);
+    content: "";
+}
 .content {
 	/* Только для оформления сетки 
   min-height: 700px;*/
@@ -316,7 +331,7 @@ h3 {
 
 .content-left {
 	float: left;
-	width: 220px;
+	width: 200px;
 	
   /* Только для оформления сетки 
   min-height: 700px;*/
@@ -787,3 +802,23 @@ body.body-inner-page  {
   background: #000000 url("../img/barbershop-shop-grid.jpg") no-repeat 50% 0px; 
   background-size: 1200px auto;
 } 
+
+
+
+
+
+.product-filter {
+	display: block;
+	margin-top: 0;
+}
+
+.product-filter input {
+		display: none;
+}
+.product-filter label {
+	display: block;
+	margin-bottom: 13px;
+	
+	font-size: 14px;
+	line-height: 24px;
+}
