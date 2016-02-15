@@ -11,6 +11,11 @@ body {
 	min-width: 960px;
 }
 
+.body-inner-page { 
+  color: #000000;
+  background: #f8f5f2 url("../img/background-light.jpg");  
+}
+
 .sprite {
     background-image: url(spritesheet.png);
     background-repeat: no-repeat;
@@ -114,37 +119,29 @@ h2 {
 	
 }
 
+h3 {
+	font-size: 24px;
+	line-height: 29px;
+	
+}
+
 .clearfix::after {
 	content: "";
 	display: table;
 	clear: both;
 }
-
-/* Только для оформления сетки */  
-/* html,
-body {
-  min-width: 1200px;
-  min-height: 1162px;
-  margin: 0;
-  padding: 0;
-} 
-body {
-  background: #000000 url("../img/barbershop-shop-grid.jpg") no-repeat 50% 0px; 
-	background: #000000 url("../img/barbershop-catalog-item-grid.jpg") no-repeat 50% 0px;
-  background-size: 1200px auto;
-}  */ 
-
+ 
 
 .main-header {
 	color: #ffffff;
   
   background-color: #000000;
-  margin-bottom: 60px;
+  margin-bottom: 57px;
 
   /* Только для оформления сетки 
-  min-height: 70px;*/
+  min-height: 70px;
 	outline: 1px solid rgb(0, 128, 0);
-	background: rgba(0, 128, 0,0.5);
+	background: rgba(0, 128, 0,0.5);*/
 }
 
 .container {
@@ -153,21 +150,21 @@ body {
   padding: 0 10px;
   
   /* Только для оформления сетки 
-  min-height: 70px;*/
+  min-height: 70px;
 	outline: 1px solid rgb(255, 45, 82);
-	background: rgba(255, 45, 82,0.5);
+	background: rgba(255, 45, 82,0.5);*/
 }
 
 .main-navigation {
 	position: relative;	
 	float: left;
 	width: 780px;
-	min-height: 70px;
+	
 
   /* Только для оформления сетки 
-  min-height: 70px;*/
+  min-height: 70px;
 	outline: 1px solid rgb(234, 255, 45);
-	background: rgba(234, 255, 45, 0.2);
+	background: rgba(234, 255, 45, 0.2);*/
 }
 
 .main-navigation-logo {
@@ -230,9 +227,9 @@ body {
 	max-width: 140px;
 	
   /* Только для оформления сетки 
-  min-height: 70px;*/
+  min-height: 70px;
 	outline: 1px solid rgb(234, 255, 45);
-	background: rgba(234, 255, 45, 0.2);
+	background: rgba(234, 255, 45, 0.2);*/
 }
 
 .login:hover {
@@ -276,11 +273,13 @@ body {
 	/* padding-top: 55px; */
 	padding-bottom: 50px;
 	
+  
 	/* Только для оформления сетки 
   min-height: 855px;*/
 	outline: 1px solid rgb(0, 128, 0);
 	background: rgba(0, 128, 0,0.2);
 }
+
 
 .second-header {
 	margin-bottom: 40px;
@@ -290,6 +289,23 @@ body {
 	outline: 1px solid rgb(0, 0, 255);
 	background: rgba(0, 0, 255,0.5);	
 }
+
+.second-header ul {
+  margin: 0;
+  padding: 0;
+	
+  list-style: none;
+	font-size: 0;
+}
+
+.second-header li {
+  display: inline-block;
+
+	font-size: 14px;
+  line-height: 24px;
+  vertical-align: top;
+}
+
 
 .content {
 	/* Только для оформления сетки 
@@ -612,9 +628,9 @@ body {
 
   background: #252525 url("img/pattern-black.jpg");
 	  /* Только для оформления сетки 
-  min-height: 190px;*/
+  min-height: 190px;
 	outline: 1px solid rgb(0, 128, 0);
-	background: rgba(0, 128, 0,0.2);
+	background: rgba(0, 128, 0,0.2);*/
 }
 
 .footer-contacts {
@@ -743,3 +759,31 @@ body {
 
   background-color: #ffffff;
 }
+
+
+
+/* Только для оформления сетки */  
+/* html,
+body {
+  min-width: 1200px;
+  min-height: 1162px;
+  margin: 0;
+  padding: 0;
+} 
+body {
+
+	background: #000000 url("../img/barbershop-catalog-item-grid.jpg") no-repeat 50% 0px;
+  background-size: 1200px auto;
+}  */ 
+
+/* */ html,
+body {
+  min-width: 1200px;
+  min-height: 1173px;
+  margin: 0;
+  padding: 0;
+} 
+body.body-inner-page  {
+  background: #000000 url("../img/barbershop-shop-grid.jpg") no-repeat 50% 0px; 
+  background-size: 1200px auto;
+} 
